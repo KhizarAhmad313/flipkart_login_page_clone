@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/background.png);
+}
+.dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+.mainContainer {
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+}
+
+/* left section */
+.left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem;
+  background-color: blue;
+  align-items: center;
+  color: white;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 7rem;
+}
+.texts p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+/* right section */
+.right {
+  background-color: white;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border: 1px solid black;
+  align-items: center;
+}
+
+form {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.inputs > input {
+  padding: 1rem 0rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.808);
+  font-size: medium;
+}
+.inputs > a {
+  position: relative;
+  left: 17rem;
+  bottom: 3.3rem;
+}
+
+.buttons {
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 10px;
+}
+.buttons > input {
+  padding: 0.9rem;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  height: 3rem;
+}
+
+.buttons > input:nth-child(1) {
+  background-color: orangered;
+  color: white;
+}
+.buttons > input:nth-child(3) {
+  background-color: white;
+  color: blue;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
